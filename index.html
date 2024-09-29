@@ -1,27 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title> Puedo ir a joderte a tu casa?</title>
-    <meta name="viewport" content="width=divice-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimum-scale=1.0"
-    <linnk rel="stylesheet" href="main.css"
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){$('.p1').hover(function(){arriba = Math.random()*(400-1) +1;abajo = Math.random() * (609-1) +1;$(this).css('top', arriba);$(this).css('left', abajo);});});function dijjoSI(){document.getElementByID('si').style.display'block';}
-        </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definición del Trabajo en Equipo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.14.0/mermaid.min.js"></script>
 </head>
 <body>
-    <div class="contenedor">
-        <div class="titulo">
-            <h1>Puedo ir a joderte</h1>
-        </div>
-        <div class="opciones">
-            <p class="p1">No</p>
-            <p onclick="dijjoSI()" class=p2>si</p>
-            <div id="si">
-                <h2> ya sabia </h2>
-            </div>
-        </div>
+    <div class="mermaid">
+        graph TD
+            A[Trabajo en Equipo]
+            A --> B[Definición]
+            A --> C[Características Clave]
+            A --> D[Beneficios]
+            A --> E[Elementos Esenciales]
+
+            B --> B1[Colaboración activa y coordinada]
+            B --> B2[Objetivo común]
+            B --> B3[Aprovechamiento de habilidades individuales]
+            B --> B4[Responsabilidad compartida]
+
+            C --> C1[Comunicación efectiva]
+            C --> C2[Sinergia]
+            C --> C3[Interdependencia]
+            C --> C4[Compromiso mutuo]
+
+            D --> D1[Mayor productividad]
+            D --> D2[Innovación y creatividad]
+            D --> D3[Mejora en la toma de decisiones]
+            D --> D4[Ambiente laboral positivo]
+
+            E --> E1[Liderazgo compartido]
+            E --> E2[Confianza entre miembros]
+            E --> E3[Resolución constructiva de conflictos]
+            E --> E4[Evaluación continua del desempeño]
     </div>
+    <script>
+        mermaid.initialize({startOnLoad:true});
+    </script>
 </body>
 </html>
